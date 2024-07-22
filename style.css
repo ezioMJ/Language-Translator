@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 900px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.translator_property {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.translator_property .nuv_item {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    padding: 0 20px;
+    background-color: #f9f9f9;
+}
+
+.translator_property .nuv_item li select {
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.translator_property .nuv_item li select:hover {
+    color: #000;
+}
+
+.bx-transfer {
+    font-size: 22px;
+    color: #333;
+    cursor: pointer;
+}
+
+.bx-transfer:hover {
+    color: #000;
+}
+
+.write_box {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+.Property_from, .Property_trans {
+    width: 50%;
+    position: relative;
+}
+
+.write_box textarea {
+    width: 100%;
+    height: 250px;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border-radius: 0 0 5px 5px;
+}
+
+.write_box .Property_from textarea {
+    border-right: 1px solid #ddd;
+}
+
+.write_box .icons {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.write_box .icons span {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.code_length {
+    font-size: 14px;
+    color: #888;
+}
+
+textarea:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}

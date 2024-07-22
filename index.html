@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="translator_property">
+            <ul class="nuv_item">
+                <li>
+                    <select id="fromLang">
+                        <option value="en">English</option>
+                        <option value="bn">Bengali</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                </li>
+                <li class="bx bx-transfer" onclick="swapLanguages()"></li>
+                <li>
+                    <select id="toLang">
+                        <option value="en">English</option>
+                        <option value="bn">Bengali</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="write_box">
+                <div class="Property_from">
+                    <textarea maxlength="5000" class="fromText" id="sourceText" placeholder="Write something..."></textarea>
+                    <div class="icons">
+                        <span class="bx bx-volume-full from"></span>
+                        <span class="bx bx-microphone" id="startRecognition"></span>
+                        <div class="code_length" id="charCount">0/5000</div>
+                    </div>
+                </div>
+                <div class="Property_trans">
+                    <textarea class="toTranslate" id="translatedText" readonly></textarea>
+                    <div class="icons">
+                        <span class="bx bx-volume-full to"></span>
+                        <span class="bx bx-copy" onclick="copyTranslation()"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="language.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
